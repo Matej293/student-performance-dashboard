@@ -1,0 +1,494 @@
+/* Custom Color Palette Variables */
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-50: #ecedf9;
+    --text-100: #d8dbf3;
+    --text-200: #b2b7e6;
+    --text-300: #8b93da;
+    --text-400: #656fcd;
+    --text-500: #3e4bc1;
+    --text-600: #323c9a;
+    --text-700: #252d74;
+    --text-800: #191e4d;
+    --text-900: #0c0f27;
+    --text-950: #060813;
+
+    --background-50: #eceef9;
+    --background-100: #d9dcf2;
+    --background-200: #b3b9e6;
+    --background-300: #8c96d9;
+    --background-400: #6674cc;
+    --background-500: #4051bf;
+    --background-600: #334199;
+    --background-700: #263073;
+    --background-800: #19204d;
+    --background-900: #0d1026;
+    --background-950: #060813;
+
+    --primary-50: #ebeef9;
+    --primary-100: #d8ddf3;
+    --primary-200: #b1bce7;
+    --primary-300: #8a9adb;
+    --primary-400: #6379cf;
+    --primary-500: #3c57c3;
+    --primary-600: #30469c;
+    --primary-700: #243475;
+    --primary-800: #18234e;
+    --primary-900: #0c1127;
+    --primary-950: #060914;
+
+    --secondary-50: #f0ebf9;
+    --secondary-100: #e1d8f3;
+    --secondary-200: #c3b1e7;
+    --secondary-300: #a58adb;
+    --secondary-400: #8763cf;
+    --secondary-500: #693cc3;
+    --secondary-600: #54309c;
+    --secondary-700: #3f2475;
+    --secondary-800: #2a184e;
+    --secondary-900: #150c27;
+    --secondary-950: #0a0614;
+
+    --accent-50: #f4ebf9;
+    --accent-100: #e9d8f3;
+    --accent-200: #d2b1e7;
+    --accent-300: #bc8adb;
+    --accent-400: #a663cf;
+    --accent-500: #8f3cc3;
+    --accent-600: #73309c;
+    --accent-700: #562475;
+    --accent-800: #39184e;
+    --accent-900: #1d0c27;
+    --accent-950: #0e0614;
+
+    /* Theme variables for light mode */
+    --text: var(--text-950);
+    --background: var(--background-50);
+    --primary: var(--primary-600);
+    --secondary: var(--secondary-200);
+    --accent: var(--accent-600);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-50: #060814;
+    --text-100: #0c1027;
+    --text-200: #181f4e;
+    --text-300: #242f75;
+    --text-400: #303e9c;
+    --text-500: #3c4ec3;
+    --text-600: #6371cf;
+    --text-700: #8a95db;
+    --text-800: #b1b8e7;
+    --text-900: #d8dcf3;
+    --text-950: #ebedf9;
+
+    --background-50: #060814;
+    --background-100: #0c0f27;
+    --background-200: #181e4e;
+    --background-300: #242d75;
+    --background-400: #303d9c;
+    --background-500: #3c4cc3;
+    --background-600: #6370cf;
+    --background-700: #8a93db;
+    --background-800: #b1b7e7;
+    --background-900: #d8dbf3;
+    --background-950: #ebedf9;
+
+    --primary-50: #060914;
+    --primary-100: #0c1127;
+    --primary-200: #18234e;
+    --primary-300: #243475;
+    --primary-400: #30469c;
+    --primary-500: #3c57c3;
+    --primary-600: #6379cf;
+    --primary-700: #8a9adb;
+    --primary-800: #b1bce7;
+    --primary-900: #d8ddf3;
+    --primary-950: #ebeef9;
+
+    --secondary-50: #0a0614;
+    --secondary-100: #150c27;
+    --secondary-200: #2a184e;
+    --secondary-300: #3f2475;
+    --secondary-400: #54309c;
+    --secondary-500: #693cc3;
+    --secondary-600: #8763cf;
+    --secondary-700: #a58adb;
+    --secondary-800: #c3b1e7;
+    --secondary-900: #e1d8f3;
+    --secondary-950: #f0ebf9;
+
+    --accent-50: #0e0614;
+    --accent-100: #1d0c27;
+    --accent-200: #39184e;
+    --accent-300: #562475;
+    --accent-400: #73309c;
+    --accent-500: #8f3cc3;
+    --accent-600: #a663cf;
+    --accent-700: #bc8adb;
+    --accent-800: #d2b1e7;
+    --accent-900: #e9d8f3;
+    --accent-950: #f4ebf9;
+
+    /* Theme variables for dark mode */
+    --text: var(--text-950);
+    --background: var(--background-100);
+    --primary: var(--primary-600);
+    --secondary: var(--secondary-300);
+    --accent: var(--accent-600);
+  }
+}
+
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+/* Global styles */
+.main {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.stApp {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+/* Enhanced sidebar styling */
+.css-1d391kg {
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+  border-radius: 0 15px 15px 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  color: var(--text);
+}
+
+section[data-testid="stSidebar"] {
+  background: linear-gradient(
+    135deg,
+    var(--secondary) 0%,
+    var(--accent) 100%
+  ) !important;
+}
+
+section[data-testid="stSidebar"] > div {
+  background: linear-gradient(
+    135deg,
+    var(--secondary) 0%,
+    var(--accent) 100%
+  ) !important;
+}
+
+section[data-testid="stSidebar"] .stMarkdown p,
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] .stSubheader {
+  color: var(--text) !important;
+}
+
+section[data-testid="stSidebar"] .stMultiSelect > div > div,
+section[data-testid="stSidebar"] .stSelectbox > div > div {
+  background-color: var(--background) !important;
+  border: 1px solid var(--primary) !important;
+  color: var(--text) !important;
+}
+
+div[data-baseweb="popover"] {
+  background-color: var(--secondary) !important;
+  border: 1px solid var(--primary) !important;
+}
+
+div[data-baseweb="menu"] li {
+  background-color: var(--secondary) !important;
+  color: var(--text) !important;
+}
+
+div[data-baseweb="menu"] li:hover {
+  background-color: var(--primary) !important;
+}
+
+span[data-baseweb="tag"] {
+  background-color: var(--primary) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--accent) !important;
+}
+
+.stButton > button {
+  background: linear-gradient(45deg, var(--primary), var(--accent));
+  border: none;
+  border-radius: 8px;
+  color: var(--text);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(95, 149, 155, 0.3);
+}
+
+.stButton > button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(112, 76, 123, 0.4);
+}
+
+div[data-testid="metric-container"] {
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+  border: 1px solid var(--primary);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  color: var(--text);
+}
+
+div[data-testid="metric-container"]:hover {
+  transform: scale(1.02);
+  border-color: var(--accent);
+}
+
+div[data-testid="stPlotlyChart"] {
+  background: linear-gradient(
+    135deg,
+    var(--secondary) 0%,
+    var(--background) 100%
+  );
+  border-radius: 12px;
+  padding: 1rem;
+  border: 1px solid var(--primary);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  min-height: 400px;
+}
+
+div[data-testid="stPlotlyChart"] > div {
+  background: transparent !important;
+  border-radius: 8px;
+  overflow: visible;
+}
+
+.main h1 {
+  background: linear-gradient(45deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.main h3 {
+  color: var(--primary);
+  font-weight: 600;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  color: var(--accent) !important;
+}
+
+.stMarkdown,
+p {
+  color: var(--text) !important;
+}
+
+.stSelectbox > div > div {
+  background: linear-gradient(
+    135deg,
+    var(--secondary) 0%,
+    var(--background) 100%
+  );
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  color: var(--text);
+}
+
+.stMultiSelect > div > div {
+  background: linear-gradient(
+    135deg,
+    var(--secondary) 0%,
+    var(--background) 100%
+  );
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  color: var(--text);
+}
+
+.stSpinner > div {
+  border-color: var(--primary) !important;
+}
+
+.stAlert {
+  border-radius: 8px;
+  border-left: 4px solid var(--primary);
+  background-color: var(--secondary);
+  color: var(--text);
+}
+
+.stTabs [data-baseweb="tab-list"] {
+  background: linear-gradient(
+    135deg,
+    var(--secondary) 0%,
+    var(--background) 100%
+  );
+  border-radius: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+  color: var(--text);
+  border-radius: 6px;
+}
+
+.stTabs [aria-selected="true"] {
+  background: linear-gradient(45deg, var(--primary), var(--accent));
+}
+
+.stSlider > div > div > div > div {
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, var(--primary), var(--accent));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+.streamlit-expanderHeader {
+  background: linear-gradient(
+    135deg,
+    var(--secondary) 0%,
+    var(--background) 100%
+  );
+  border-radius: 8px;
+  border: 1px solid var(--primary);
+  color: var(--text);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+div[data-testid="stPlotlyChart"]:hover {
+  animation: float 2s ease-in-out infinite;
+}
+
+.stCheckbox > label > div {
+  background: linear-gradient(
+    135deg,
+    var(--secondary) 0%,
+    var(--background) 100%
+  );
+  border: 1px solid var(--primary);
+}
+
+[data-testid="collapsedControl"] {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: fixed !important;
+  top: 1rem !important;
+  left: 1rem !important;
+  z-index: 999999 !important;
+}
+
+[data-testid="collapsedControl"] button {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  background-color: var(--primary) !important;
+  color: var(--text) !important;
+  border: 2px solid var(--accent) !important;
+  border-radius: 50% !important;
+  padding: 0.75rem !important;
+  box-shadow: 0 4px 15px rgba(95, 149, 155, 0.4) !important;
+  transition: all 0.3s ease !important;
+  width: 3rem !important;
+  height: 3rem !important;
+}
+
+[data-testid="collapsedControl"] button:hover {
+  background-color: var(--accent) !important;
+  transform: scale(1.1) !important;
+  box-shadow: 0 6px 20px rgba(112, 76, 123, 0.6) !important;
+}
+
+.css-1d391kg button[kind="headerNoPadding"] {
+  background-color: var(--primary) !important;
+  color: var(--text) !important;
+  border: 2px solid var(--accent) !important;
+  border-radius: 50% !important;
+  padding: 0.5rem !important;
+}
+
+[data-testid="stHeader"] button {
+  display: block !important;
+  visibility: visible !important;
+}
+
+button[kind="headerNoPadding"] {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.css-1rs6os,
+.css-17lntkn {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+button[title="App menu"],
+button[aria-label="App menu"] {
+  display: none !important;
+}
+
+button[data-testid="deployButton"],
+button[title="Deploy"],
+a[data-testid="deployButton"],
+.stAppDeployButton {
+  display: none !important;
+}
+
+.css-14xtw13.e8zbici0 {
+  display: none !important;
+}
+
+button[title="Settings"],
+button[aria-label="Settings"],
+button[title="Share"],
+button[aria-label="Share"] {
+  display: none !important;
+}
+
+#MainMenu {
+  display: none !important;
+}
+
+button[kind="headerNoPadding"],
+[data-testid="collapsedControl"] button,
+.css-1d391kg button[kind="headerNoPadding"] {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}

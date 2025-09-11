@@ -1,0 +1,58 @@
+[theme]
+# Primary accent color
+primaryColor = "#6379cf"
+
+# Background color for main content area
+backgroundColor = "#0c0f27"
+
+# Background color for sidebar
+secondaryBackgroundColor = "#3f2475"
+
+# Text color
+textColor = "#ebedf9"
+
+# Font family
+font = "sans serif"
+
+# Base theme
+base = "dark"
+
+[server]
+# Disable CORS protection
+enableCORS = false
+enableXsrfProtection = false
+
+# Server port
+port = 8501
+
+# File watcher for auto-reload
+fileWatcherType = "auto"
+
+# Message and upload size limits
+maxMessageSize = 200
+maxUploadSize = 200
+
+[browser]
+# Disable usage stats collection
+gatherUsageStats = false
+serverAddress = "localhost"
+
+[ui]
+# Hide top bar but keep sidebar
+hideTopBar = false
+
+[runner]
+# Enable magic commands and fast reruns
+magicEnabled = true
+fastReruns = true
+
+[client]
+# Show error details
+showErrorDetails = true
+
+# Toolbar mode
+toolbarMode = "auto"
+
+[logger]
+# Logging level
+level = "info"
